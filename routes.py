@@ -6,9 +6,16 @@ app = Flask(__name__)
 def home():
   return render_template('home.html')
 
-@app.route('')
+@app.route('/status')
 def about():
-  return render_template('')
- 
+	if user_choice == "released":
+		return render_template("released.html", choice = user_choice)
+	else:
+		return render_template("held.html", choice = user_choice)
+
+@app.route('/nextsteps')
+def about():
+	return
+	
 if __name__ == '__main__':
   app.run(debug=True)
