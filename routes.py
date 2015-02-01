@@ -14,21 +14,21 @@ def start():
 	else:
 		return render_template("modify.html")
 
-@app.route('/message')
-def type():
-	person = request.form.get("type")
-	if person == "juvenile":
-		return render_template("juvenile.html")
-	else:
-		return render_template("adult.html")
-
 @app.route('/status')
-def about():
-	user_choice = request.args.get("statuschoice")
-	if user_choice == "released":
-		return render_template("released.html", choice = user_choice)
+def type():
+	person = request.args.get("type")
+	if person == "juvenile":
+		return render_template("juvenilestatus.html")
 	else:
-		return render_template("held.html", choice = user_choice)
+		return render_template("adultstatus.html")
+
+@app.route('/nextsteps')
+def status():
+	status = request.args.get("statuschoice")
+	if status == "released":
+		return render_template("released.html")
+	else:
+		return render_template("held.html")
  
 if __name__ == '__main__':
   app.run(debug=True)
