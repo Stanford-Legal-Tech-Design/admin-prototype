@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Send Messages</title>
+	<link rel="stylesheet" type="text/css" href="/static/style.css">
+</head>
+<body>
+	<h1>Send Messages</h1>
+	<p></p>
+	<h2>Options</h2>
+	<form action="/sent" id="send-message" method="POST">
+
+	<p><label><input type="checkbox" name="message" value="message1"><strong>Option 1:</strong></label> 
+	{{ jname }}, your court date is in 3 days at 1532 Alameda Ave at 10:30 a.m. on March 31.
+	</p>
+	<p><label><em>Send on:</em> <input type="date" name="send1" min="2015-01-31"></label></p>
+
+	
+	<p><label><input type="checkbox" name="message" value="message2"><strong>Option 2:</strong></label>
+	{{ jname }}, your court date is in 3 weeks on March 31 at 10:30 a.m. Please bring a parent/guardian with you.
+	</p>
+	<p><label><em>Send on:</em> <input type="date" name="send2" min="2015-01-31"></label></p>
+
+
+	<p><label><input type="checkbox" name="message" value="message3"><strong>Option 3:</strong></label>
+	{{ jname}}, your court date is tomorrow at 11 a.m. Do not wear jeans, sweatshirt, sneakers or clothing with holes.
+	</p>
+	<p><label><em>Send on:</em> <input type="date" name="send3" min="2015-01-31"></label></p>
+
+
+	<p><label><input type="checkbox" name="message" value="message4"><strong>Option 4:</strong></label>
+	If you want to continue receiving information while you complete community service, reply with YES to this number.
+	</p>
+	<p><label><em>Send on:</em> <input type="date" name="send4" min="2015-01-31"></label></p>
+
+	<p><label><input type="checkbox" name="message" value="message5"><strong>Option 5:</strong></label>
+	{{ jname }}, your court date is in 1 week on March 31 at 10:30 a.m. If you will need an interpreter, reply with YES to this number.
+	</p>
+	<p><label><em>Send on:</em> <input type="date" name="send5" min="2015-01-31"></label></p>
+
+	<p><label><input type="checkbox" name="message" value="message6"><strong>Option 6:</strong></label>
+	{{ pname }}, please accompany your child/ward {{ jname }} to court on March 31 at 10:30 a.m. at 1532 Alameda Ave.
+	</p>
+	<p><label><em>Send on:</em> <input type="date" name="send6" min="2015-01-31"></label></p>
+
+	<p><label><input type="checkbox" name="message" value="message7"><strong>Option 7:</strong></label>
+	{{ jname }}, your court date is in 2 weeks on March 31. If you'd like more information on the process, please visit www.website.gov.
+	</p>
+	<p><label><em>Send on:</em> <input type="date" name="send7" min="2015-01-31"></label></p>
+
+
+	<div class="button">
+	<label><input type="submit" id="submit" value="Schedule messages"></label>
+	</div>
+	</form>
+
+</body>
+
+<footer>
+	
+
+</footer>
+</html>

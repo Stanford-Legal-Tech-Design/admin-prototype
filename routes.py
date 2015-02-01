@@ -30,5 +30,15 @@ def status():
 	else:
 		return render_template("held.html")
  
+@app.route('/text-options', methods=['GET', 'POST'])
+def options():
+	jname = request.form.get("jname")
+	pname = request.form.get("pname")
+	jnumber = request.form.get("jnumber")
+	pnumber = request.form.get("pnumber")
+	return render_template("messaging.html", jname = jname, pname = pname, jnumber = jnumber)
+
 if __name__ == '__main__':
   app.run(debug=True)
+
+
