@@ -2,6 +2,7 @@
 <html>
 <head>
 	<title>Message Scheduling Workflow</title>
+	<link rel="stylesheet" type="text/css" href="/static/style.css">
 </head>
 <body>
 	<h1>Message Scheduling Workflow</h1>
@@ -9,8 +10,11 @@
 	<h2>Options</h2>
 	<form action="/start" id="first-input" method="GET">
 	<label><input type="radio" name="start" value="schedule">Schedule messages</label><br>
-	<label><input type="radio" name="start" value="modify">Modify messages</label><br>
-	<label><input type="submit" value="Submit"></label>
+	<label><input type="radio" name="start" value="modify">Modify messages</label><br><br>
+
+	<div class="button">
+	<label><input type="submit" id="submit" value="Submit"></label>
+	</div>
 	</form>
 
 </body>
