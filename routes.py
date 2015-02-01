@@ -24,7 +24,7 @@ def type():
 
 @app.route('/status')
 def about():
-	action = request.args.get("statuschoice")
+	user_choice = request.args.get("statuschoice")
 	if user_choice == "released":
 		return render_template("released.html", choice = user_choice)
 	else:
