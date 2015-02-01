@@ -24,14 +24,11 @@ def type():
 
 @app.route('/status')
 def about():
+	action = request.args.get("statuschoice")
 	if user_choice == "released":
 		return render_template("released.html", choice = user_choice)
 	else:
 		return render_template("held.html", choice = user_choice)
-
-@app.route('/nextsteps')
-def about():
-	return
  
 if __name__ == '__main__':
   app.run(debug=True)

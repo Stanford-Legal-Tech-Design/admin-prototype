@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Input Juvenile Information</title>
+    <link rel="stylesheet" href="/static/madlibs.css">
+</head>
+<body>
+<h1>Input Juvenile Information and Select Messaging Options</h1>
+
+<h2>Juvenile Information</h2>
+<p>Please input information in fields below.</p>
+<form action="/" method="POST">
+    
+    <label><strong>Juvenile Name:</strong> <input type="text" name="jname"></label><br>
+    
+    <label><strong>Parent/Guardian Name: </strong><input type="text" name="pname"></label><br>
+    
+    <label><strong>Date of Incident: </strong><input type="text" name="incidentdate"></label><br>
+
+    <label><strong>Case #: </strong><input type="text" name="casenum"></label><br>
+
+    <label><strong>Juvenile Phone Number: </strong><input type="text" name="jnumber"></label><br>
+
+    <label><strong>Parent/Guardian Number: </strong><input type="text" name="pnumber"></label><br>
+
+    <label><strong>Additional Contact: </strong><input type="text" name="addcontact"></label><br>
+
+    <label><strong>Additional Contact Number: </strong><input type="text" name="anumber"></label><br>
+
+    <h2>Texting Options:</h2>
+    <p>Please select personalization choices below.</p>
+
+    <strong>Language for Juvenile Texts: </strong><select name="language1">
+        <label><option value="English">English</option></label>
+        <label><option value="Spanish">Spanish</option></label>
+        <label><option value="Vietnamese">Vietnamese</option></label>
+    </select><br>
+
+    <strong>Language for Parent/Guardian Texts: </strong><select name="language2">
+        <label><option value="English">English</option></label>
+        <label><option value="Spanish">Spanish</option></label>
+        <label><option value="Vietnamese">Vietnamese</option></label>
+    </select><br>
+
+    <strong>Language for Additional Contact Texts: </strong><select name="language3">
+        <label><option value="English">English</option></label>
+        <label><option value="Spanish">Spanish</option></label>
+        <label><option value="Vietnamese">Vietnamese</option></label>
+    </select><br>
+
+<br><div class="home"><input type="submit" id="submit" value="Submit"><div>
+</form>
+</body>
+</html>
